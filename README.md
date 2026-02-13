@@ -17,3 +17,8 @@ A lightweight Python CLI tool that analyzes URLs and assigns a phishing-risk sco
 ```bash
 python3 phish_Checker.py https://example.com
 python3 phish_Checker.py "paypal-login.verify-account.xyz/login"
+
+## Example output
+
+![Example output 1](output1.png)
+![Example output 2](output2.png)
