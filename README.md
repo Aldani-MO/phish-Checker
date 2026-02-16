@@ -19,19 +19,20 @@ python3 phish_Checker.py https://example.com
 python3 phish_Checker.py "paypal-login.verify-account.xyz/login"
 ```
 
-## How to run with Docker
+![Example output 1](output1.png)
+![Example output 2](output2.png)
+
+
+## Run with Docker
+
+Build the image:
 ```bash
-docker build -t phish-checker .
-docker run --rm phish-checker https://example.com
-docker run --rm phish-checker "paypal-login.verify-account.xyz/login"
+docker build -t phish-checker:1.0 .
 ```
 
-You can also analyze multiple URLs in one command:
+Run the container:
 ```bash
-docker run --rm phish-checker https://example.com https://bit.ly/test
+docker run --rm phish-checker:1.0 "http://docker-login.verify-account.xyz/signin"
 ```
 
-## Example output
-
-![Example output 1](./output1.png)
-![Example output 2](./output2.png)
+![Docker output](outputDocker.png)
